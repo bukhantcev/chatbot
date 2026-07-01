@@ -1,0 +1,4 @@
+aiogram==3.22.0
+openai==2.44.0
+python-dotenv==1.2.1
+aiosqlite==0.22.1

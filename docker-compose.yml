@@ -1,0 +1,12 @@
+services:
+  chatbot:
+    image: ${BOT_IMAGE:-chatbot:local}
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - chatbot_data:/app/data
+
+volumes:
+  chatbot_data:
